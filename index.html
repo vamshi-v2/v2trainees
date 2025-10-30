@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>I'm Harsha</h1>
-    <h3>How is your day:</h3>
+    <h3>Please enter you views:</h3>
     <input type="text" id="value" style="margin-left: 10px;">
     <input type="submit" id="btn" style="background-color:blue; text-align:center; color:white;">
     <p id="p1"></p>
@@ -16,7 +16,9 @@
     <h2>new line after else added new branched.</h2>
     <script>
 	    document.getElementById("btn").addEventListener("click",function(){
-		    document.getElementById("p1").innerHTML=document.getElementById("value").value;
+		    var msg = document.getElementById("p1").innerHTML=document.getElementById("value").value;
+            console.log(msg);
+            window.alert("Thank you for the feedback.")
 		   });
     </script>
 
