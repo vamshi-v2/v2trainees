@@ -17,6 +17,11 @@ added new layout
 
     <h2>new line after else added new branched.</h2>
 
+    <h3> Hello this is venkata</h3>
+    <h4>How are you</h4>
+    <input type="text" id="val">
+    <input type="submit" id="btn1">
+
         <h3>A line for pull request to the admin.</h3>
 
     <script>
@@ -25,6 +30,10 @@ added new layout
             console.log(msg);
             window.alert("Thank you for the feedback.")
 		   });
+	    document.getElementById("btn1").addEventListener("click", function(){
+		    let res=document.getElementById("val").value;
+		    alert(`I am feeling ${res}`);
+	});
     </script>
 
 </body>
