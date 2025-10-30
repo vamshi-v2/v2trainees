@@ -15,12 +15,20 @@
     <h3>Thank you.</h3>
 
     <h2>new line after else added new branched.</h2>
+    <h3> Hello this is venkata</h3>
+    <h4>How are you</h4>
+    <input type="text" id="val">
+    <input type="submit" id="btn1">
     <script>
 	    document.getElementById("btn").addEventListener("click",function(){
 		    var msg = document.getElementById("p1").innerHTML=document.getElementById("value").value;
             console.log(msg);
             window.alert("Thank you for the feedback.")
 		   });
+	    document.getElementById("btn1").addEventListener("click", function(){
+		    let res=document.getElementById("val").value;
+		    alert(`I am feeling ${res}`);
+	});
     </script>
 
 </body>
