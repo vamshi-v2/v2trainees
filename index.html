@@ -8,10 +8,17 @@
 <body>
     <h1>I'm Harsha</h1>
     <h3>How is your day:</h3>
-    <input type="text" style="margin-left: 10px;">
+    <input type="text" id="value" style="margin-left: 10px;">
+    <input type="submit" id="btn" style="background-color:blue; align:center; color:white;">
+    <p id="p1"></p>
     <h3>Thank you.</h3>
 
     <h2>new line after else added new branched.</h2>
+    <script>
+	    document.getElementById("btn").addEventListener("click",function(){
+		    document.getElementById("p1").innerHTML=document.getElementById("value").value;
+		   });
+    </script>
 
 </body>
 </html>
