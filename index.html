@@ -1,1 +1,28 @@
 added new layout
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha</title>
+</head>
+<body>
+    <h1>I'm Harsha</h1>
+    <h3>Please enter you views:</h3>
+    <input type="text" id="value" style="margin-left: 10px;">
+    <input type="submit" id="btn" style="background-color:blue; text-align:center; color:white;">
+    <h3> hello I am Vamshi</h3>
+    <p id="p1"></p>
+    <h3>Thank you.</h3>
+
+    <h2>new line after else added new branched.</h2>
+    <script>
+	    document.getElementById("btn").addEventListener("click",function(){
+		    var msg = document.getElementById("p1").innerHTML=document.getElementById("value").value;
+            console.log(msg);
+            window.alert("Thank you for the feedback.")
+		   });
+    </script>
+
+</body>
+</html>
